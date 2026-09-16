@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+header {
+  background: #1a73e8;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+header h1 { margin: 0; font-size: 1.5rem; }
+main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+h2 { margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.5rem; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.stat-card {
+  background: #f0f4ff;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+.stat-card .value { font-size: 1.6rem; font-weight: bold; color: #1a73e8; }
+.stat-card .label { font-size: 0.85rem; color: #555; margin-top: 0.3rem; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+th, td {
+  text-align: left;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+}
+tr:hover { background: #f8f9fa; }
+.status-pending { color: #f9a825; }
+.status-running { color: #1a73e8; }
+.status-completed { color: #2e7d32; }
+.status-failed { color: #c62828; }
+.status-timeout { color: #6a1b9a; }

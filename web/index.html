@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API 编排服务</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>API 编排服务</h1>
+  </header>
+  <main>
+    <section id="stats-section">
+      <h2>统计看板</h2>
+      <div id="stats" class="stats-grid">加载中...</div>
+    </section>
+    <section id="list-section">
+      <h2>执行实例列表</h2>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>流程ID</th>
+            <th>状态</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <section id="flow-section">
+      <h2>编排流程列表</h2>
+      <table id="flow-list">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>名称</th>
+            <th>状态</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
